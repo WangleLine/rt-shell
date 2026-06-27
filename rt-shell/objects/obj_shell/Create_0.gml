@@ -340,7 +340,7 @@ function _calculate_scroll_from_suggestion_index() {
 		if (suggestionIndex >= autocompleteScrollPosition + autocompleteMaxLines) {
 			autocompleteScrollPosition = max(0, suggestionIndex - autocompleteMaxLines + 1);
 		} else if (suggestionIndex < autocompleteScrollPosition) {
-			autocompleteScrollPosition = autocompleteScrollPosition - suggestionIndex;
+			autocompleteScrollPosition = suggestionIndex;
 		}
 	}
 }
