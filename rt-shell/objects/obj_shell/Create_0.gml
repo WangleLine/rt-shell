@@ -31,6 +31,8 @@ autocompleteMaxWidth = 0;
 autocompleteScrollPosition = 0;
 autocompleteOriginX = 0;
 autocompleteOriginY = 0;
+autocompleteEndX = 0;
+autocompleteEndY = 0;
 mousePreviousX = device_mouse_x_to_gui(0);
 mousePreviousY = device_mouse_y_to_gui(0);
 

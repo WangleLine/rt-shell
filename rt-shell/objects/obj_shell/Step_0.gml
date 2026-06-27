@@ -226,8 +226,8 @@ if (!isOpen) {
 	if (isAutocompleteOpen) {
 		var x1 = autocompleteOriginX;
 		var y1 = autocompleteOriginY;
-		var x2 = x1 + autocompleteMaxWidth + font_get_size(consoleFont) + (autocompletePadding * 2) - scrollbarWidth;
-		var y2 = y1 + (string_height(prompt) * min(array_length(filteredSuggestions), autocompleteMaxLines)) + autocompletePadding;
+		var x2 = autocompleteEndX;
+		var y2 = autocompleteEndY;
 		if (point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), x1, y1, x2, y2)) {
 			if (mouse_wheel_down()) {
 				autocompleteScrollPosition++;

@@ -189,9 +189,11 @@ if (isOpen) {
 					y2 = y1 + (suggestionsAmount * emHeight);
 				}
 				
-				// Store x1 & y1 for later use with scrolling mouse detection
+				// Store the box corners for later use with scrolling mouse detection
 				autocompleteOriginX = x1;
 				autocompleteOriginY = y1;
+				autocompleteEndX = x2;
+				autocompleteEndY = y2;
 				
 				// Draw autocomplete background
 				if (suggestionsBackground != noone) {
